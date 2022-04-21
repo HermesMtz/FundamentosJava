@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <h1>Calculadora basica</h1>
+   valor a <br/>
+   <input id="varA" type="number" /><br/>
+   valor b <br/>
+   <input id="varB" type="number" /><br/>
+   valor c <br/>
+   <input id="varC" type="number" /><br/>
+   El resultado de la suma <br/>
+   <button onclick="suma()">click</button>
+   <input id="suma" type="suma()"/><br/>
+   El resultado de la resta <br/>
+   <button onclick="resta()">click</button>
+   <input id="resta" type="resta()"/><br/>
+   El resultado de la multiplicacion <br/>
+   <button  onclick="multi()">click</button>
+   <input id="multi" type="multi()"/><br/>
+   El resultado de la division<br/>
+   <button  onclick="divi()">click</button>
+   <input id="divi" type="divi()"/><br><br/>
+   <h2>Calculadora con switch</h2>
+  
+
+    <script> 
+    function suma(){
+        let varA = Number(document.getElementById("varA").value);
+        let varB = Number(document.getElementById("varB").value);
+        let varC = Number(document.getElementById("varC").value);
+            let suma = varA+varB+varC;
+            document.getElementById("suma").value=suma;
+        }
+    function resta(){
+        let varA = Number(document.getElementById("varA").value);
+        let varB = Number(document.getElementById("varB").value);
+        let varC = Number(document.getElementById("varC").value);
+            let resta = varA-varB-varC;
+            document.getElementById("resta").value=resta;
+    }
+    function multi(){
+        let varA = Number(document.getElementById("varA").value);
+        let varB = Number(document.getElementById("varB").value);
+        let varC = Number(document.getElementById("varC").value);
+        
+            let multi = varA*varB*varC;
+            document.getElementById("multi").value=multi;
+    }
+    function divi(){
+        let varA = Number(document.getElementById("varA").value);
+        let varB = Number(document.getElementById("varB").value);
+        let varC = Number(document.getElementById("varC").value);
+        
+            let divi = varA/varB/varC;
+            document.getElementById("divi").value=divi;
+    }
+     const a = 500;
+     const b = 400;
+     const c = 300;
+
+     raiz1=(Math.sqrt(a));
+     raiz2=(Math.sqrt(b));
+
+     console.log(raiz1);
+     console.log(raiz2);
+
+ varA=parseFloat(prompt("introducas un numero"));
+ varB=parseFloat(prompt("introducas un numero otro numero"));
+ varC=parseFloat(prompt("introducas un ultimo numero"));
+ signo=prompt("introdusca un signo de operacion");
+
+ switch(signo){
+     case "+":
+         resultado=varA+varB+varC;
+     break;
+
+     case "-":
+         resultado=varA-varB-varC;
+     break;
+     
+     case "*":
+         resultado=varA*varB*varC;
+     break;
+
+     case "/":
+         resultado=varA/varB/varC;
+     break;
+
+ }
+   document.write(resultado);
+
+      
+
+
+</script>
+</body>
+</html>
