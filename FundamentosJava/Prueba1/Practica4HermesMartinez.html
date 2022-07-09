@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora con estructura de decision</h1>
+    <button onclick="calculadoraRe()"> click</button>
+    <script>
+    let varA,varB,varC,resultado;
+    let s, n;
+    let i=1;
+    let res;
+    res =parseFloat(prompt("cuantas veces desea repetir"));
+for( i ; i<=res ; i++ ) {
+        varA=parseFloat(prompt("introdusca un numero"));
+        varB=parseFloat(prompt("introdusca otro numero"));
+        varC=parseFloat(prompt("introdusca el ultimo numero"));
+        signo=prompt("ponga un signo");
+        
+       
+        switch(signo) {
+            case '+':
+            resultado=(varA+varB+varC);
+            alert("este es el resultado " + resultado);
+            
+            break;
+            case '-':
+            resultado=(varA-varB-varC);
+            alert("este es el resultado " + resultado);
+            break;
+            case '*':
+            resultado=(varA*varB*varC);
+            alert("este es el resultado " + resultado);
+            break;
+            case '/':
+            resultado=(varA/varB/varC);
+            alert("este es el resultado " + resultado);
+            break;
+            default:
+             }   
+   
+            }
+
+function calculadoraRe(){
+    let res=parseFloat(prompt("desea hacerlo de nuevo s/n"));
+            let s , n;
+            if(res == s){
+                varA=parseFloat(prompt("introdusca un numero"));
+                varB=parseFloat(prompt("introdusca otro numero"));
+                varC=parseFloat(prompt("introdusca el ultimo numero"));
+                signo=prompt("ponga un signo");
+                }else
+                if(res == n){
+                    alert("bye");
+                    
+                }
+            }
+    
+  /*1) Programa una función que cuente el número de caracteres de 
+una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.*/
+
+function contador(){
+let cadena = "Hola Mundo";
+console.log(cadena.length);  
+}
+contador()
+
+/*2) Programa una función que te devuelva el texto recortado según el 
+número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".*/
+
+function cortar(){
+    let cadena1 = "Hola Mundo";
+    let cadena2 = cadena1.slice(0, -5);
+console.log(cadena2);
+}
+cortar()
+
+/*3) Programa una función que dada una String te devuelva un Array de textos separados 
+por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].*/
+
+function separacion(){
+    let string = 'hola que tal';
+    string.split(' , ');
+    console.log(string);
+}
+separacion()
+
+/*4) Programa una función que repita un texto X veces, 
+pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.*/
+
+function repetir(){
+    let cadena = "Hola Mundo";
+    let repeticion = cadena.repeat(3);
+    console.log(repeticion);
+}
+repetir()
+
+    
+
+    </script>
+</body>
+</html>
